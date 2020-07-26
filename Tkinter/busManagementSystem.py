@@ -8,7 +8,7 @@ window.title("B.E.S.T Management")
 window.geometry("{0}x{1}+0+0".format(window.winfo_screenwidth(), window.winfo_screenheight()))
 #header = Label(window, text="Compound Tracker for Weightlifting", font=("arial",30,"bold"), fg="steelblue").pack()
 
-con = sq.connect('Gym.db')
+con = sq.connect('busDB.db')
 c = con.cursor() 
 
 panedwindow = ttk.Panedwindow(window, orient = HORIZONTAL)
